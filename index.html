@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattlestarFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">BattlestarFlix</header>
+    <div class="question-tag">
+        <div class="main-question">
+            What is your favorite bsg season?
+        </div>
+        <h3>type 0 to clean</h3>
+    </div>
+    <div class="container-input">
+        <form class="main-form">
+            <div class="main-input">
+                <label for="number-input" class="input-label" hidden>What is your favorite bsg season?</label>
+                <input type="number" class="number-input" id="number-input" min="0" max="4" placeholder="Season here...">
+            </div>
+            <div class="main-button">
+                <button type="button" onclick="takeValue()" class="send-button">send</button>
+            </div>
+        </form>          
+    </div>
+    <div class="images-container">
+        <figure class="image">
+            <img src="images/bsg_season1.jpg" class="image-season" alt="Season 1 poster">
+            <figcaption class="fig-season"> Season 1</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="images/bsg_season2.jpg" class="image-season" alt="Season 2 poster">
+            <figcaption class="fig-season"> Season 2</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="images/bsg_season3.jpg" class="image-season" alt="Season 3 poster">
+            <figcaption class="fig-season"> Season 3</figcaption>
+        </figure>
+        <figure class="image">
+            <img src="images/bsg_season4.jpg" class="image-season" alt="Season 4 poster">
+            <figcaption class="fig-season"> Season 4</figcaption>
+        </figure>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
